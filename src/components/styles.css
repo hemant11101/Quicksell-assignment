@@ -1,0 +1,157 @@
+/* Global styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: #ffffff;
+  border-bottom: 1px solid #ddd;
+}
+
+header h1 {
+  font-size: 24px;
+  color: #333;
+}
+
+header select {
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+
+/* Kanban Board */
+.kanban-board {
+  background: #f5f5f5;
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  overflow-x: auto;
+}
+
+/* Kanban Column */
+.kanban-column {
+  flex: 1;
+  min-width: 300px;
+  background: #f5f5f5;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.kanban-column h2 {
+  background: #f3f4f6;
+  padding: 10px;
+  margin: 0;
+  text-align: left;
+  font-size: 14px;
+  color: #555;
+}
+
+.kanban-column-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Align items to the left */
+  gap: 10px; /* Add space between elements */
+}
+
+/* Kanban Cards */
+.kanban-card {
+  width: 100%; /* Full width of the column */
+  max-width: 280px; /* Consistent width for all cards */
+  height: 100px; /* Fixed height for uniform dimensions */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px; /* Adjusted for consistent spacing */
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin: 10px auto;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Prevent overflow of content */
+  text-overflow: ellipsis;
+}
+
+/* Ticket Title */
+.ticket-title {
+  font-size: 13px;
+  font-weight: bold;
+  color: #333;
+  margin: 0 0 5px 0; /* Even spacing below */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Ticket ID */
+.ticket-id {
+  color: #666;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+/* Ticket Count */
+.ticket-count {
+  color: darkgray;
+  font-size: 12px;
+}
+
+/* Kanban Card Content */
+.kanban-card h3 {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 5px;
+  font-weight: 700;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.kanban-card p {
+  margin: 5px 0;
+  color: #666;
+  font-size: 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.kanban-card strong {
+  color: #333;
+}
+
+/* Footer for Kanban Cards (if needed) */
+.kanban-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+
+.priority-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.priority-svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* Loader and Error States */
+.loader,
+.error-message {
+  text-align: center;
+  font-size: 16px;
+  color: #555;
+}
